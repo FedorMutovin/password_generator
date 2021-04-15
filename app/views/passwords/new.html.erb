@@ -1,0 +1,7 @@
+<div>
+  <h1>Generate your password</h1>
+  <%= form_tag  passwords_path, remote: true %>
+  <%= select_tag :length, options_for_select(password_length) %>
+  <%= submit_tag "Generate" %>
+</div>
+<div class="password"></div>
